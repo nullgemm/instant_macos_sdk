@@ -2,6 +2,8 @@ clang
 cmake
 git
 python
+python-click
+python-request
 libxml2
 cpio
 xar
