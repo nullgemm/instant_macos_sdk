@@ -31,6 +31,11 @@ python3 -m pip install requests
 python3 -m pip install click
 ```
 
-Simply double-click the downloaded packages to install them
+Run the downloading script (not the baking script, it is only for Linux!)
+```
+./get_macos_sdk.sh
+```
+
+Then simply double-click the downloaded packages to install them
  - tmp/CLTools_macOS1015_SDK.pkg
  - tmp/CLTools_Executables.pkg
