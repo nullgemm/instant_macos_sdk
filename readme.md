@@ -27,6 +27,7 @@ if you wish to download the macOS SDK without using an Apple account.
 You just have to install the required dependencies using [homebrew](https://brew.sh/)
 ```
 brew install python
+pip3 install --user --upgrade pip
 pip3 install requests
 pip3 install click
 ```
