@@ -1,5 +1,5 @@
-# Instant MacOS SDK
-This bash script downloads the MacOS SDK and prepares it for cross-compilation under
+# Instant macOS SDK
+This bash script downloads the macOS SDK and prepares it for cross-compilation under
 ArchLinux (with the help of [osxcross](https://github.com/tpoechtrager/osxcross)).
 It also eliminates the need for an Apple account without going warez by getting
 all the necessary files directly from the official SoftwareUpdate servers.
@@ -8,35 +8,27 @@ Only the SDK is downloaded, not the entire Xcode environment (it is useless for
 cross-compilation anyway, and would require downloading 7GB instead of 240MB).
 
 ## Usage
-Make sure all the required dependencies are installed (ArchLinux example below)
+Make sure all the required dependencies are installed:
 ```
 yay -S --needed - < arch_pkgs.list
 ```
 
-And run the scripts
+And run the scripts:
 ```
-./get_macos_sdk.sh
-./bake_macos_sdk.sh
-source ./update_env.sh
-```
-
-## Running MacOS ?
-It is perfectly possible to use the `get_macos_sdk.sh` script under MacOS
-if you wish to download the macOS SDK without using an Apple account.
-
-You just have to install the required dependencies using [homebrew](https://brew.sh/)
-```
-brew install python
-pip3 install --user --upgrade pip
-pip3 install requests
-pip3 install click
+./fetch_macos_sdk.sh
+./build_macos_sdk.sh
+source ./sdk/update_env.sh
 ```
 
-Run the downloading script (not the baking script, it is only for Linux!)
+## Running macOS ?
+It is perfectly possible to use the `fetch_macos_sdk.sh` script under macOS
+if you wish to download the macOS SDK but without using an Apple account.
+Run the fetching script (not the build script, it is only for Linux!):
 ```
-./get_macos_sdk.sh
+./fetch_macos_sdk.sh
 ```
 
 Then simply double-click the downloaded packages to install them
- - tmp/CLTools_macOS1015_SDK.pkg
- - tmp/CLTools_Executables.pkg
+ - sdk/CLTools_Executables.pkg
+ - sdk/CLTools_macOSNMOS_SDK.pkg
+ - sdk/CLTools_macOS_SDK.pkg
