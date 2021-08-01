@@ -15,17 +15,18 @@ yay -S --needed - < arch_pkgs.list
 
 And run the scripts:
 ```
-./fetch_macos_sdk.sh
-./build_macos_sdk.sh
-source ./sdk/update_env.sh
+./fetch.sh
+./unpkg.sh
+./build.sh
+source ./sdk/update_env
 ```
 
 ## Running macOS ?
-It is perfectly possible to use the `fetch_macos_sdk.sh` script under macOS
+It is perfectly possible to use the `fetch.sh` script under macOS
 if you wish to download the macOS SDK but without using an Apple account.
 Run the fetching script (not the build script, it is only for Linux!):
 ```
-./fetch_macos_sdk.sh
+./fetch.sh
 ```
 
 Then simply double-click the downloaded packages to install them
