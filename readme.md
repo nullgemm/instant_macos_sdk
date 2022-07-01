@@ -10,7 +10,8 @@ cross-compilation anyway, and would require downloading 7GB instead of 240MB).
 ## Usage
 Make sure all the required dependencies are installed:
 ```
-yay -S --needed - < arch_pkgs.list
+sudo pacman -S --needed - < arch_pkgs.list
+yay -S --needed - < aur_pkgs.list
 ```
 
 And run the scripts:
