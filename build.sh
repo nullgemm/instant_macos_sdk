@@ -11,7 +11,7 @@ mv osxcross-master osxcross
 echo "# Preparing the SDK with osxcross"
 
 XCODEDIR=root osxcross/tools/gen_sdk_package.sh
-mv MacOSX*.*.sdk.tar.xz osxcross/tarballs
+mv MacOSX13.sdk.tar.xz osxcross/tarballs
 
 echo "# Installing the SDK"
 
